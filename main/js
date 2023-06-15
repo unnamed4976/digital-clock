@@ -1,0 +1,31 @@
+'use strict';
+
+{
+  
+  let hiduke = document.getElementById('hiduke');
+  let jikan = document.getElementById('jikan');
+  let youbi = document.getElementById('youbi');
+  let weeks = ["日", "月", "火", "水", "木", "金", "土" ];
+
+  function clock()
+  {
+  let d = new Date();
+
+  let year = d.getFullYear();
+  let month = d.getMonth() + 1;
+  let date = d.getDate();
+
+  let week = weeks[d.getDay()];
+
+  let hour = d.getHours();
+  let minute = d.getMinutes();
+  let second = d.getSeconds();
+
+  hiduke.textContent = year + '年' + month + '月' + date  + '日';
+  youbi.textContent = week + '曜日';
+  jikan.textContent = hour + '時' + minute + '分' + second + '秒';
+  }
+
+  setInterval(clock, 1000);
+    
+}

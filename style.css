@@ -1,0 +1,14 @@
+body {
+  text-align: center;
+  background: rgb(205, 205, 205);
+}
+
+.tokei {
+  margin-top: 80px;
+  font-size: 40px;
+}
+
+.koukoku {
+  display: flex;
+  flex-direction: column;
+}
